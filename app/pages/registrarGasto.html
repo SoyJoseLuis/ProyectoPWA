@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA DE REGISTRAR GASTO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="registrarGasto.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <h1>Registrar Gasto</h1>
+            
+            <!-- Formulario para la glosa y el monto -->
+            <form id="gasto-form">
+                <label for="glosa">Glosa</label>
+                <textarea name="glosa" id="glosa" placeholder="Ingresa la glosa aquí"></textarea>
+
+                <label for="monto">Monto</label>
+                <input type="number" name="monto" id="monto" placeholder="Ingresa el monto">
+
+                <!-- Botón para tomar la foto -->
+                <button type="button" id="btnTomarFoto">Tomar Foto</button>
+
+                <!-- Contenedor para mostrar las fotos tomadas -->
+                <div id="fotosContenedor"></div>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Registrar Gasto</button>
+            </form>
+        </div>
+    </main>
+
+    
+</body>
+</html>

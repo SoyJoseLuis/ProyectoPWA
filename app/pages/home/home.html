@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="home.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Espacio entre botones */
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 200px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Sistema de Gestión de Gastos</h1>
+    <div>
+        <button onclick="location.href='/registrarGasto'">Registrar un Gasto</button>
+    </div>
+    <br>
+    <div>
+        <button onclick="location.href='/verGasto'">Ver Gastos</button>
+    </div>
+
+    
+</body>
+</html>
